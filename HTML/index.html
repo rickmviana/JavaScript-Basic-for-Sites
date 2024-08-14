@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Funcionario</title>
+</head>
+<body>
+    <h1>Cadastro de Funcionários</h1>
+    <form id="funcionerioForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade"><br><br>
+
+        <label for="cargo">Cargo:</label>
+        <select name="cargo" id="cargo">
+            <option value="Gerente">Gerente</option>
+            <option value="Desenvolvedor">Desenvolvedor</option>
+        </select><br><br>
+
+        <label for="departamento">Departamento (apenas para Gerentes):</label>
+        <input type="text" id="departamento" name="departamento"><br><br>
+
+        <label for="linguagem">linguagem de Programação (apenas para Desenvolvedores)</label>
+        <input type="text" id="linguagem" name="linguagem">
+
+        <button type="button" onclick="cadastrarFuncionario()">Cadastrar</button>
+    </form>
+
+    <h2>Informações do Funcionario</h2>
+    <div id="resultado"></div>
+    <div id="error" style="color: red;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
